@@ -1,0 +1,120 @@
+version: api.keploy.io/v1beta1
+name: test-set-1-report
+status: PASSED
+success: 1
+failure: 0
+ignored: 0
+total: 1
+tests:
+    - kind: Http
+      name: test-set-1
+      status: PASSED
+      started: 1722932421
+      completed: 1722932421
+      test_case_path: /Users/shivamsouravjha/landing-page/pkg/projects/javaScript/keploy/test-set-1
+      mock_path: /Users/shivamsouravjha/landing-page/pkg/projects/javaScript/keploy/test-set-1/mocks
+      test_case_id: test-1
+      req:
+        method: GET
+        proto_major: 1
+        proto_minor: 1
+        url: http://localhost:5000/animals
+        header:
+            Accept: '*/*'
+            Host: localhost:5000
+            User-Agent: curl/7.88.1
+        body: ""
+        timestamp: 2024-08-06T13:49:56.416227337+05:30
+      resp:
+        status_code: 200
+        header:
+            Connection: keep-alive
+            Content-Length: "14"
+            Content-Type: application/json; charset=utf-8
+            Date: Tue, 06 Aug 2024 08:20:21 GMT
+            Etag: W/"e-xTqSvvzpX43NGjSqz68M4eqH5nA"
+            Keep-Alive: timeout=5
+            X-Powered-By: Express
+        body: '{"animals":[]}'
+        status_message: ""
+        proto_major: 0
+        proto_minor: 0
+        timestamp: 0001-01-01T00:00:00Z
+      noise:
+        header.Date: []
+      result:
+        status_code:
+            normal: true
+            expected: 200
+            actual: 200
+        headers_result:
+            - normal: true
+              expected:
+                key: Date
+                value:
+                    - Tue, 06 Aug 2024 08:19:56 GMT
+              actual:
+                key: Date
+                value:
+                    - Tue, 06 Aug 2024 08:20:21 GMT
+            - normal: true
+              expected:
+                key: Etag
+                value:
+                    - W/"e-xTqSvvzpX43NGjSqz68M4eqH5nA"
+              actual:
+                key: Etag
+                value:
+                    - W/"e-xTqSvvzpX43NGjSqz68M4eqH5nA"
+            - normal: true
+              expected:
+                key: Keep-Alive
+                value:
+                    - timeout=5
+              actual:
+                key: Keep-Alive
+                value:
+                    - timeout=5
+            - normal: true
+              expected:
+                key: X-Powered-By
+                value:
+                    - Express
+              actual:
+                key: X-Powered-By
+                value:
+                    - Express
+            - normal: true
+              expected:
+                key: Connection
+                value:
+                    - keep-alive
+              actual:
+                key: Connection
+                value:
+                    - keep-alive
+            - normal: true
+              expected:
+                key: Content-Length
+                value:
+                    - "14"
+              actual:
+                key: Content-Length
+                value:
+                    - "14"
+            - normal: true
+              expected:
+                key: Content-Type
+                value:
+                    - application/json; charset=utf-8
+              actual:
+                key: Content-Type
+                value:
+                    - application/json; charset=utf-8
+        body_result:
+            - normal: true
+              type: JSON
+              expected: '{"animals":[]}'
+              actual: '{"animals":[]}'
+        dep_result: []
+test_set: test-set-1
